@@ -1,0 +1,69 @@
+
+<%- include ('./partials/messages') %>
+<%- include ('./partials/header') %>
+<form action="/users/register" method="POST">
+  <div id="registerForm">
+    <h1>Register</h1>
+    <br>
+    <br>
+<div>
+    <label id="name" for="name">Name</label>
+    <br>
+    <br>
+    <input
+      type="name"
+      name="name"
+      value="<%= typeof name != 'undefined' ? name : '' %>"
+    />
+  
+</div>
+<br>
+<br>
+<div>
+    <label for="email">Email</label>
+    <br>
+    <br>
+    <input id="email"
+      type="email"
+      name="email"
+      value="<%= typeof email != 'undefined' ? email : '' %>"
+    />
+  </div>
+  <br>
+    <br>
+  <div >
+    <label id="password1" for="password">Password</label>
+    <br>
+    <br>
+    <input
+      type="password"
+      name="password"
+      value="<%= typeof password != 'undefined' ? password : '' %>"
+    />
+  </div>
+  <br>
+    <br>
+  <div >
+    <label id="password2" for="password2">Confirm Password</label>
+    <br>
+    <br>
+    <input
+      type="password"
+      name="password2"
+      value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+    />
+  </div>
+  <br>
+    <br>
+    <div class="frc-captcha" data-sitekey="FCMK5S4VOJ14M3KJ" data-callback="registerBtn"></div>
+    <br>
+    <br>
+  <button type="submit" class="btn btn-primary btn-block">
+    Register
+  </button>
+</form>
+<br>
+<br>
+
+<p >Have An Account?<a href="/users/login">Login</a></p>
+</div>
