@@ -12,10 +12,11 @@
 <br>
 <br>
 
-<a href="/users/register" id="registerBtn" class="btn btn-primary btn-block mb-2"
-  >Register</a>
-<a href="/users/login" id="loginBtn"> Login</a>
+<button  id="registerBtn" class="btn btn-primary btn-block mb-2" disabled>
+  <a href="/users/register"> Register</a> </button> 
+<button id="loginBtn" disabled><a href="/users/login">Login</a></button> 
 </div>
+
 <div class="cookie-container">
   <p>
     We use cookies in this website to give you the best experience on our
@@ -31,11 +32,12 @@
 <script>
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieButton = document.querySelector(".cookie-btn");
- 
+
 cookieButton.addEventListener("click", () => { 
   cookieContainer.classList.remove("active");
   localStorage.setItem("cookieBannerDisplayed", "true");
-
+  document.getElementById("registerBtn").disabled = false; 
+  document.getElementById("loginBtn").disabled = false; 
 });
 
 setTimeout(() => {
