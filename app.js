@@ -58,4 +58,4 @@ app.use('/healthcheck', require('./routes/healthcheck.routes'));
 sslServer.listen(3443, () =>
     console.log('Secure server on port 3443')
 );
-app.listen(3000);
+app.listen(3000); 
