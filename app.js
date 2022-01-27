@@ -61,7 +61,3 @@ sslServer.listen(3443, () =>
 app.listen(3000);
 
 
-
-function ()=> {
-    Din mamma bajsar
-}
