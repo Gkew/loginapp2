@@ -1,17 +1,10 @@
 <%- include ('./partials/header') %>
-<button id="logoutBtn" id="logoutBtn"><a href="/users/logout">Logout</a></button>
+<button id="logoutBtn"><a href="/users/logout">Logout</a></button>
+
 <a href="#" onclick="signOut();">Sign out</a>
 <div id="dash">
-<h1>Dashboard</h1>
-<p> Welcome <%= user.name %></p>
-<br>
-
-<div id="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, voluptatum! Voluptatem, ipsam cumque placeat doloremque officia ducimus doloribus corrupti voluptates dolore, distinctio repellendus nisi architecto asperiores, facilis error illo reprehenderit.
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, non explicabo itaque laboriosam dolores maxime porro, fuga, sequi nobis rem sint velit nulla adipisci repellendus fugit magnam numquam facere error?
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa inventore veritatis nemo ex quam maiores cupiditate accusantium, numquam vero enim doloribus iusto delectus, fugit blanditiis voluptas officia a. Explicabo, reiciendis?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis debitis molestias alias libero perferendis culpa quas magnam nihil ad! Sequi vel quis consectetur sapiente expedita! Vero, accusamus architecto. Autem?
-</div>
+<h1>Hello <%= user.name %>,</h1> 
+<p>You found the secret page</p>
 </div>
 
 

@@ -64,14 +64,17 @@ a {
   margin-left: 40%;
   margin-top: 5%;
 }
+
 #logoutBtn {
+  border-radius: 10px;
+  padding: 5px 0;
   text-decoration: none;
   position: fixed;
-  top: 2%;
+  width: 120px;
+  top: 1.5%;
   right: 2%;
-  color: white;
+  color: #fff;
   background-color: rgb(82, 102, 194);
-  color: white;
   font-family: 'Press Start 2P', cursive;
 }
 #registerBtn:hover,
